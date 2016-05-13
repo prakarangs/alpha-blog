@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Alpha Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <%= stylesheet_link_tag '/assets/stylesheets/bootstrap.min.css' %>
+    <%= stylesheet_link_tag '/assets/stylesheets/cover.css' %>
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Alpha Blog</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><%= link_to 'Home', root_path %></li>
+                  <li><a href="#"><%= link_to 'About', about_path %></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="profile-inner">
+                  <%= image_tag 'http://f.ptcdn.info/384/038/000/nzgq53mgrXtRM7HEG7B-o.png', :class => "icon-profile" %>  
+                </div>
+              </div>
+              <div class="col-lg-6 about-me">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </body>
+</html>

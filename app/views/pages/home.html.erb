@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Alpha Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <%= stylesheet_link_tag '/assets/stylesheets/bootstrap.min.css' %>
+    <%= stylesheet_link_tag '/assets/stylesheets/cover.css' %>
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Alpha Blog</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><%= link_to 'Home', root_path %></li>
+                  <li><a href="#"><%= link_to 'About', about_path %></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Welcome to Alpha Blog</h1>
+            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="lead">
+              <%= link_to 'Learn more about me', about_path, :class => 'btn btn-lg btn-default' %>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </body>
+</html>
